@@ -1,11 +1,11 @@
 :root {
-  --color-darkest: #343a40;
+  --color-darkest: #fcffee;
   --color-dark: #495057;
-  --color-medium: #ced4da;
-  --color-light: #f1f3f5;
+  --color-medium: #2c3136;
+  --color-light: #1b2024;
 
-  --color-theme: #1098ad;
-  --color-accent: #ffa94d;
+  --color-theme: #52ff77;
+  --color-accent: #ff1e00;
 }
 
 @import url("https://fonts.googleapis.com/css2?family=Codystar&display=swap");
@@ -133,7 +133,7 @@ progress {
 .btn {
   display: block;
   font-family: inherit;
-  color: inherit;
+  color: white;
   font-size: calc(100vmin - 97vmin);
   border: 2px solid var(--color-dark);
   background-color: var(--color-dark);
@@ -144,6 +144,7 @@ progress {
 }
 .btn:not([disabled]):hover {
   background-color: var(--color-darkest);
+  color:black;
 }
 
 .btn-option:not([disabled]):hover {

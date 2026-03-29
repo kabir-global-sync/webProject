@@ -15,11 +15,8 @@ import Timer from "./Timer";
 import "../index.css";
 
 const SECS_PER_QUESTION = 5;
-
-// We need to define the intialState in order to use useReduce Hook.
 const initialState = {
   questions: [],
-  // 'loading', 'error', 'ready', 'active', 'finished'
   status: "loading",
   index: 0,
   answer: null,
