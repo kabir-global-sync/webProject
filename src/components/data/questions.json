@@ -1,0 +1,69 @@
+{
+  "questions": [
+    {
+      "question": "What is the capital of Japan?",
+      "options": ["Beijing", "Seoul", "Tokyo", "Bangkok"],
+      "correctOption": 2,
+      "points": 10
+    },
+    {
+      "question": "Which planet is known as the Red Planet?",
+      "options": ["Earth", "Mars", "Jupiter", "Venus"],
+      "correctOption": 1,
+      "points": 10
+    },
+    {
+      "question": "Who wrote the play 'Romeo and Juliet'?",
+      "options": ["Charles Dickens", "William Shakespeare", "Mark Twain", "Jane Austen"],
+      "correctOption": 1,
+      "points": 10
+    },
+    {
+      "question": "What is the chemical symbol for gold?",
+      "options": ["Ag", "Au", "Pb", "Fe"],
+      "correctOption": 1,
+      "points": 10
+    },
+    {
+      "question": "Which data structure uses FIFO (First In First Out)?",
+      "options": ["Stack", "Queue", "Tree", "Graph"],
+      "correctOption": 1,
+      "points": 20
+    },
+    {
+      "question": "What does HTTP stand for?",
+      "options": [
+        "HyperText Transfer Protocol",
+        "High Transfer Text Protocol",
+        "Hyper Transfer Text Process",
+        "High Text Transfer Process"
+      ],
+      "correctOption": 0,
+      "points": 20
+    },
+    {
+      "question": "Which organ in the human body pumps blood?",
+      "options": ["Brain", "Lungs", "Heart", "Liver"],
+      "correctOption": 2,
+      "points": 10
+    },
+    {
+      "question": "Which country hosted the 2016 Summer Olympics?",
+      "options": ["China", "Brazil", "UK", "Russia"],
+      "correctOption": 1,
+      "points": 20
+    },
+    {
+      "question": "What is the square root of 64?",
+      "options": ["6", "7", "8", "9"],
+      "correctOption": 2,
+      "points": 10
+    },
+    {
+      "question": "Which language is primarily used for Android app development?",
+      "options": ["Swift", "Kotlin", "Ruby", "Go"],
+      "correctOption": 1,
+      "points": 20
+    }
+  ]
+}
