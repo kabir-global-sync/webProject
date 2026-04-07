@@ -1,5 +1,6 @@
 import { useEffect, useReducer } from "react";
-
+import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
+import About from "./About";
 import Header from "./Header";
 import Main from "./Main";
 import Loader from "./Loader";
@@ -105,56 +106,77 @@ export default function App() {
   }, []);
 
   return (
-    <div className="wrapper">
-      <div className="app">
-        <div className="headerWrapper">
-          <Header />
-
-          <Main>
-            {status === "loading" && <Loader />}
-            {status === "error" && <Error />}
-            {status === "ready" && (
-              <StartScreen numQuestions={numQuestions} dispatch={dispatch} />
-            )}{" "}
-            {status === "active" && (
-              <>
-                <Progress
-                  index={index}
-                  numQuestions={numQuestions}
-                  points={points}
-                  maxPossiblePoints={maxPossiblePoints}
-                  answer={answer}
-                />
-                <Question
-                  question={questions[index]}
-                  dispatch={dispatch}
-                  answer={answer}
-                />
-                <Footer>
-                  <Timer
-                    dispatch={dispatch}
-                    secondsRemaining={secondsRemaining}
-                  />
-                  <NextButton
-                    dispatch={dispatch}
-                    answer={answer}
-                    numQuestions={numQuestions}
-                    index={index}
-                  />
-                </Footer>
-              </>
-            )}
-            {status === "finished" && (
-              <FinishScreen
-                points={points}
-                maxPossiblePoints={maxPossiblePoints}
-                highscore={highscore}
-                dispatch={dispatch}
+    <Router>
+      <div className="wrapper">
+        <div className="app">
+  
+          <nav style={{ marginBottom: "2rem" }}>
+            <Link to="/" style={{ marginRight: "2rem",textDecoration :"none",color:"#1f618d",fontSize:"30px",
+fontWeight:"bold"}}>Home</Link>
+            <Link to="/about" style={{textDecoration :"none",color:"#1f618d",fontSize:"30px",
+fontWeight:"bold"}}>About</Link>
+          </nav>
+          <div className="headerWrapper">
+            <Header />
+            <Routes>
+              <Route
+                path="/"
+                element={
+                  <Main>
+                    {status === "loading" && <Loader />}
+                    {status === "error" && <Error />}
+                    {status === "ready" && (
+                      <StartScreen
+                        numQuestions={numQuestions}
+                        dispatch={dispatch}
+                      />
+                    )}
+  
+                    {status === "active" && (
+                      <>
+                        <Progress
+                          index={index}
+                          numQuestions={numQuestions}
+                          points={points}
+                          maxPossiblePoints={maxPossiblePoints}
+                          answer={answer}
+                        />
+                        <Question
+                          question={questions[index]}
+                          dispatch={dispatch}
+                          answer={answer}
+                        />
+                        <Footer>
+                          <Timer
+                            dispatch={dispatch}
+                            secondsRemaining={secondsRemaining}
+                          />
+                          <NextButton
+                            dispatch={dispatch}
+                            answer={answer}
+                            numQuestions={numQuestions}
+                            index={index}
+                          />
+                        </Footer>
+                      </>
+                    )}
+  
+                    {status === "finished" && (
+                      <FinishScreen
+                        points={points}
+                        maxPossiblePoints={maxPossiblePoints}
+                        highscore={highscore}
+                        dispatch={dispatch}
+                      />
+                    )}
+                  </Main>
+                }
               />
-            )}
-          </Main>
+              <Route path="/about" element={<About />} />
+            </Routes>
+          </div>
         </div>
       </div>
-    </div>
+    </Router>
   );
 }

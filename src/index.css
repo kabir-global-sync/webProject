@@ -75,7 +75,7 @@ img {
   border-radius: 50%;
 }
 h1 {
-  font-family: "Codystar";
+  font-family: "Roboto";
   font-size: calc(100vmin - 93vmin);
   text-align: center;
 }
@@ -139,21 +139,10 @@ progress {
   background-color: var(--color-dark);
   padding: 1.2rem 2.4rem;
   cursor: pointer;
-  border-radius: 100px;
+  border-radius: 14px;
   transition: 0.3s;
 }
-.btn:not([disabled]):hover {
-  background-color: var(--color-darkest);
-  color:black;
-}
 
-.btn-option:not([disabled]):hover {
-  transform: translateX(1.2rem);
-}
-
-.btn[disabled]:hover {
-  cursor: not-allowed;
-}
 
 .btn-ui {
   float: right;
@@ -279,4 +268,13 @@ progress {
 .counter * {
   font-size: inherit;
   padding: 0.8rem;
+}
+
+
+nav a {
+  border: 2px solid #000;
+  padding: 10px 10px;
+  text-decoration: none;
+  display: inline-block;
+  border-radius: 14px;
 }
