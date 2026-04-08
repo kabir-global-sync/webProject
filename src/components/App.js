@@ -129,6 +129,7 @@ fontWeight:"bold"}}>About</Link>
                       <StartScreen
                         numQuestions={numQuestions}
                         dispatch={dispatch}
+                        creator="Altamash Kabir 22BCE0536"
                       />
                     )}
   

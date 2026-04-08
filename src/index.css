@@ -3,7 +3,6 @@
   --color-dark: #495057;
   --color-medium: #2c3136;
   --color-light: #1b2024;
-
   --color-theme: #52ff77;
   --color-accent: #ff1e00;
 }
@@ -224,8 +223,6 @@ progress {
   border-radius: 100px;
   margin-left: -2rem;
 }
-
-/* CREDIT: https://dev.to/afif/i-made-100-css-loaders-for-your-next-project-4eje */
 .loader {
   width: 50px;
   height: 24px;
@@ -252,9 +249,6 @@ progress {
     background-position: 0% 50%, 50% 50%, 100% 100%;
   }
 }
-
-/* ********** */
-/* First counter example */
 .counter {
   display: flex;
   flex-direction: column;
