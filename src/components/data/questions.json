@@ -28,7 +28,7 @@
       "question": "Which data structure uses FIFO (First In First Out)?",
       "options": ["Stack", "Queue", "Tree", "Graph"],
       "correctOption": 1,
-      "points": 20
+      "points": 10
     },
     {
       "question": "What does HTTP stand for?",
@@ -39,7 +39,7 @@
         "High Text Transfer Process"
       ],
       "correctOption": 0,
-      "points": 20
+      "points": 10
     },
     {
       "question": "Which organ in the human body pumps blood?",
@@ -51,7 +51,7 @@
       "question": "Which country hosted the 2016 Summer Olympics?",
       "options": ["China", "Brazil", "UK", "Russia"],
       "correctOption": 1,
-      "points": 20
+      "points": 10
     },
     {
       "question": "What is the square root of 64?",
@@ -63,7 +63,7 @@
       "question": "Which language is primarily used for Android app development?",
       "options": ["Swift", "Kotlin", "Ruby", "Go"],
       "correctOption": 1,
-      "points": 20
+      "points": 10
     }
   ]
 }
